@@ -1,0 +1,37 @@
+<view class="title" bindtap="actionSheetTap">
+  <text>{{'《'}}</text> {{title}}<text>{{'》'}}</text>
+</view>
+<view class="time">
+<!-- 第一个动画 -->
+  <view class="big-circle blue first"></view>
+  <view class="big-circle right blue1 first" animation="{{leftanimationData}}"></view>
+<view class="circle first">
+<view class="textLeft">{{lefttime}}S </view>
+</view>
+<!-- //第二个 -->
+  <view class="big-circle blue second"></view>
+  <view class="big-circle right blue1 second " animation="{{regthanimationData}}"></view>
+<view class="circle second">
+<view class="textRight">{{rightime}}S </view>
+</view>
+</view>
+
+<view class="btnGroup">
+  <button class="btn" bindtap="leftStart">正方发言</button>
+  <button class="btn" bindtap="rightStart">反方发言</button>
+</view>
+<view class="desc">
+  <text>
+{{desc}}
+</text></view>
+<audio  src="{{src}}" id="myAudio"  loop></audio>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <block wx:for="{{actionSheetItems}}">
+    <action-sheet-item class="item" bindtap="bindItemTap" id="{{item.id}}">
+      {{item.name}}
+    </action-sheet-item>
+  </block>
+  <action-sheet-cancel class="cancel">
+    取消
+  </action-sheet-cancel>
+</action-sheet>

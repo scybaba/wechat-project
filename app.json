@@ -1,0 +1,42 @@
+{
+  "pages":[
+      "pages/welcome/welcome",
+      "pages/index/index",
+      "pages/set/set",
+      "pages/qita/qita"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#336699",
+    "navigationBarTitleText": "辩论赛计时器",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#04477c",
+    "borderStyle":"white",
+    "color":"#dddddd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "计时",
+        "iconPath": "/pages/images/1.png",
+        "selectedIconPath": "/pages/images/2.png"
+      },
+      {
+        "borderStyle": "white",
+        "pagePath": "pages/set/set",
+        "text": "设置",
+        "iconPath": "/pages/images/3.png",
+        "selectedIconPath": "/pages/images/4.png"
+      },
+      {
+        "pagePath":"pages/qita/qita",
+        "text":"其他",
+        "iconPath":"/pages/images/7.png",
+        "selectedIconPath":"/pages/images/8.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="avatar" src="/images/timg.jpg"></image>
+  <text class="motto">hello</text>
+  <view catchtap="onTapJump" class="journey-container">
+    <text class="journey">欢迎使用辩论计时器</text>
+  </view>
+</view>

@@ -1,0 +1,88 @@
+<view class="content">
+  <view class="section-title">
+    立论阶段：
+    <switch checked bindchange="switchChange" id="config1"/>
+  </view>
+  <view class="hr"></view>
+  <view class="time">
+    <text>时间限制（S）</text>
+    <slider bindchange="sliderChange" show-value step="1" min="10" max="600"  id="config1" value="{{configs.config1.time}}"/>
+  </view>
+  <view class="">
+    <text>声音提醒</text>
+    <radio-group class="voice" bindchange="radioChange"  id="config1">
+      <label>  <radio value="15" checked/>提前15秒</label>
+      <label>  <radio value="10" />提前10秒</label>
+      <label>  <radio value="5" />提前5秒</label>
+    </radio-group>
+  </view>
+  <view class="section-title">
+    驳立论阶段：
+    <switch checked bindchange="switchChange" id="config2"/>
+  </view>
+  <view class="hr"></view>
+  <view class="time">
+    <text>时间限制（S）</text>
+    <slider bindchange="sliderChange" show-value step="1" min="10" max="600" id="config2" value="{{configs.config2.time}}"/>
+  </view>
+  <view class="">
+    <text>声音提醒</text>
+    <radio-group class="voice" bindchange="radioChange" id="config2">
+      <label>  <radio value="15" checked/>提前15秒</label>
+      <label>  <radio value="10" />提前10秒</label>
+      <label>  <radio value="5" />提前5秒</label>
+    </radio-group>
+  </view>
+    <view class="section-title">
+    质辩阶段：
+    <switch checked bindchange="switchChange" id="config3"/>
+  </view>
+  <view class="hr"></view>
+  <view class="time">
+    <text>时间限制（S）</text>
+    <slider bindchange="sliderChange" show-value step="1" min="10" max="600" id="config3" value="{{configs.config3.time}}"/>
+  </view>
+  <view class="">
+    <text>声音提醒</text>
+    <radio-group class="voice" bindchange="radioChange" id="config3">
+      <label>  <radio value="15" checked/>提前15秒</label>
+      <label>  <radio value="10" />提前10秒</label>
+      <label>  <radio value="5" />提前5秒</label>
+    </radio-group>
+  </view>
+    <view class="section-title">
+    自由辩论阶段：
+    <switch checked bindchange="switchChange" id="config4"/>
+  </view>
+  <view class="hr"></view>
+  <view class="time">
+    <text>时间限制（S）</text>
+    <slider bindchange="sliderChange" show-value step="1" min="10" max="600"  id="config4" value="{{configs.config4.time}}"/>
+  </view>
+  <view class="">
+    <text>声音提醒</text>
+    <radio-group class="voice" bindchange="radioChange"  id="config4">
+      <label>  <radio value="15" checked/>提前15秒</label>
+      <label>  <radio value="10" />提前10秒</label>
+      <label>  <radio value="5" />提前5秒</label>
+    </radio-group>
+  </view>
+
+    <view class="section-title">
+    总结陈词阶段：
+    <switch checked bindchange="switchChange" id="config5" />
+  </view>
+  <view class="hr"></view>
+  <view class="time">
+    <text>时间限制（S）</text>
+    <slider bindchange="sliderChange" show-value step="1" min="10" max="600"  id="config5" value="{{configs.config5.time}}" />
+  </view>
+  <view class="">
+    <text>声音提醒</text>
+    <radio-group class="voice" bindchange="radioChange"  id="config5" >
+      <label>  <radio value="15" checked/>提前15秒</label>
+      <label>  <radio value="10" />提前10秒</label>
+      <label>  <radio value="5" />提前5秒</label>
+    </radio-group>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class='view{{skinStyle}}'>
+  <image class='headimage' src='../../images/head.jpg' bindtap='login'></image>
+  <text style='margin-bottom: 40px;width: auto;font-size: 16px;' bindtap='login'>{{username}}</text>
+</view>
+<view class = 'setbac{{skinStyle}}'>
+  <view class="weui-cells__title{{skinStyle}}">夜间模式与白天模式</view>
+  <view class="weui-cell{{skinStyle}} weui-cell_switch">
+    <view class="weui-cell__bd">当前状态:{{reals?'夜间模式':'白天模式'}}</view>
+    <view>
+      <switch checked="{{reals}}" bindchange='switchChange' >
+      </switch>
+    </view>
+  </view>
+</view>
